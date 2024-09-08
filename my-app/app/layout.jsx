@@ -4,7 +4,7 @@ import { Variable, Weight } from "lucide-react";
 
 // components
 import Header from "@/components/Header";
-
+import PageTransition from "@/components/PageTransition";
 const jetBrains_Mono = JetBrains_Mono({
   subsets: ["latin"],
   weight:["100","200","300","400","500","600","700","800"],
@@ -21,7 +21,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jetBrains_Mono.variable}>
       <Header/>
-      {children}</body>
+      <PageTransition> {children}</PageTransition>
+     
+      </body>
     </html>
   );
 }

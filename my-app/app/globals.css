@@ -4,13 +4,22 @@
 
 :root {
   --font-jetBrainsMono: 'JetBrains Mono', monospace;
- 
-    --accent: #FFC0CB; /* Changer la couleur d'accent en rose bébé */
-    --accent-foreground: #000; /* Optionnel : couleur d'accent au premier plan */
-
+  --accent: #ffb6c1; /* Changer la couleur d'accent en rose bébé */
+  --accent-foreground: #000; /* Optionnel : couleur d'accent au premier plan */
 }
 
+@layer base {
 /* Autres styles globaux */
-body {
-  @apply font-primary bg-primary text-white leading-loose;
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+  .h1 {
+    @apply text-[38px]  xl:text-[50px] leading-[1.1] font-semibold; /* Corrigé ici */
+  }
+  .h2 {
+    @apply text-[36px]  xl:text-[48px] leading-[1.1] font-semibold; /* Corrigé ici */
+  }
+  .h3 {
+    @apply text-[20px]  xl:text-[24px] leading-[1.1] font-semibold; /* Corrigé ici */
+  }
 }

@@ -25,8 +25,8 @@ module.exports = {
       colors: {
         primary: "#1c1c22",
         accent: {
-          DEFAULT: "#FFC0CB", // Changer la couleur d'accent par défaut en #FFC0CB
-          hover: "#FFB6C1", // Optionnel : couleur d'accent au survol
+          DEFAULT: "#00ff99", // Changer la couleur d'accent par défaut en #FFC0CB
+          hover: "#00E187", // Optionnel : couleur d'accent au survol
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

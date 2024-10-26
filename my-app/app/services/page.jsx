@@ -1,4 +1,6 @@
-"use client";
+
+"use client"
+import { motion } from "framer-motion";
 import {BsArrowDownRight} from "react-icons/bs";
 import Link from "next/link"
 import { Description } from "@radix-ui/react-dialog";
@@ -32,7 +34,6 @@ const services =[
   
 ];
 
-import {motion} from "framer-motion" ;
 
 const Services = () => {
   return (

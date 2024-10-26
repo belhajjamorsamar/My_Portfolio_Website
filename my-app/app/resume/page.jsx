@@ -1,7 +1,7 @@
-" use client ";
+"use client"
+import {motion} from "framer-motion";
 import { Title } from "@radix-ui/react-dialog";
 import { FaHtml5, FaCss3, FaJs , FaReact , FaNodeJs , FaPhp, FaPython} from "react-icons/fa";
-
 import {SiTailwindcss, SiNextdotjs ,SiLaravel , SiMaterialdesign , SiNumpy ,SiMatplotlip} from "react-icons/si"
 
 
@@ -43,7 +43,6 @@ const about={
 
 
 };
-
 
 //EXPERIENCE DATA
  const experience={
@@ -162,26 +161,40 @@ items:[
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
 import {tooltip,TooltipProvider, TooltipContent,TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
-import {motion} from "framer-motion";
+
 
 const Resume = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className=""
-    >
-      <h1>My Resume</h1> {/* Example content */}
-      {/* Add other content here */}
-    </motion.div>
-  );
+    initial={{ opacity: 0 }}
+    animate={{
+      opacity: 1,
+      transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+    }}
+  className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+  >
+    <div className="container mx-auto">
+     <Tabs 
+      defaultValue="experience"
+      className="flex flex-col xl:flex-row gap-[60px]"
+      >
+     <TabsList className="flex flex-col max-w-[380px] mx-auto xl:mx-0 gap-6 ">
+       <TabsTrigger value="experience">Experience</TabsTrigger>
+       <TabsTrigger value="education">Education</TabsTrigger>
+       <TabsTrigger value="skills">Skills</TabsTrigger>
+       <TabsTrigger value="about">About me</TabsTrigger>
+     </TabsList>
+
+     {/* content*/}
+     <div className="min-h[70vh] w-full "></div>
+     {/* Experience*/}
+     <TabsContent  value ="experience" className=" w-full ">
+      experience
+     </TabsContent>
+     </Tabs>
+    </div>
+  </motion.div>
+);
 };
-
-
-
-
 
 export default Resume

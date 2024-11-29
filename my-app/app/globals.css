@@ -6,6 +6,7 @@
   --font-jetBrainsMono: 'JetBrains Mono', monospace;
   --accent: #ffb6c1; /* Rose bébé */
   --accent-foreground: #000; /* Premier plan */
+  
 }
 
 @layer base {
